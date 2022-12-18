@@ -1,37 +1,35 @@
+<!-- Create a simple Program to build the Calculator in JavaScript using with HTML and CSS web languages. -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+<title>Calculator</title>
 </head>
 <body>
-    <!-- creates the grid -->
-    <div>
-        <input type="text" id="output" onclick="funOUT()"></input>
-        <button id="num7" onclick="fun7()">7</button>
-        <button id="num8" onclick="fun8()">8</button>
-        <button id="num9" onclick="fun9()">9</button>
-        <button id="num4" onclick="fun4()">4</button>
-        <button id="num5" onclick="fun5()">5</button>
-        <button id="num6" onclick="fun6()">6</button>
-        <button id="num1" onclick="fun1()">1</button>
-        <button id="num2" onclick="fun2()">2</button>
-        <button id="num3" onclick="fun3()">3</button>
-        <button id="num0" onclick="fun0()">0</button>
-        <button id="decimal" onclick="funDEC()">.</button>
-        <button id="negative" onclick="funNEG()">(-)</button>
-        <button id="divide" onclick="funDIV()">/</button>
-        <button id="multiply" onclick="funMULT()">x</button>
-        <button id="subtract" onclick="funSUB()">-</button>
-        <button id="add" onclick="funADD()">+</button>
-        <button id="enter" onclick="funEQU()">=</button>
-    </div>
 
-    <!-- adds the js -->
-    <script src="function2.js"></script>
-    
+<div id="calcBox">
+<input type="text" id="display">
+<input type = "button" value = "1" onclick = "output('1')" id="num1">
+<input type = "button" value = "2" onclick = "output('2')" id="num2">
+<input type = "button" value = "3" onclick = "output('3')" id="num3">
+<input type = "button" value = "+" onclick = "output('+')" id="addOp">
+<input type = "button" value = "4" onclick = "output('4')" id="num4">
+<input type = "button" value = "5" onclick = "output('5')" id="num5">
+<input type = "button" value = "6" onclick = "output('6')" id="num6">
+<input type = "button" value = "-" onclick = "output('-')" id="subOp">
+<input type = "button" value = "7" onclick = "output('7')" id="num7">
+<input type = "button" value = "8" onclick = "output('8')" id="num8">
+<input type = "button" value = "9" onclick = "output('9')" id="num9">
+<input type = "button" value = "*" onclick = "output('*')" id="multOp">
+<input type = "button" value = "/" onclick = "output('/')" id="fracOp">
+<input type = "button" value = "0" onclick = "output('0')" id="num0">
+<input type = "button" value = "." onclick = "output('.')" id="decimal">
+<input type = "button" value = "=" onclick = "equal()" id="equOp">
+<input type = "button" value = "AC" onclick = "allClear()"id="AC">
+</div>
+
+<script src="function.js"></script>
 </body>
 </html>
+
+ 
